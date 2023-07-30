@@ -8,7 +8,15 @@
 
     background: #3649f0;
 }
-
+.button a {
+    border-radius: 30%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0e21f1;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
 img {
     width: 70px;
     height: 70px;
