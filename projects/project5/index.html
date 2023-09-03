@@ -1,59 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=`, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet" href="../project5/stlye/main.css">
-    </head>
+    <link rel="stylesheet" type="text/css" href="../project5/stlye/main.css">
 
-    <nav class="navbar fixed-top bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="O:\FullStack_hackeru\Omar_Aloran_project\index.html">Omar Aloran</a>
-        </div>
-    </nav>  
-    
-    <body>
-    <div class="container">
-        <img src="../project5/imgs/" alt="">
-        <div class="text-wrapper">
-            <h1>HTML + CSS+ Bootstrap
-            </h1>
-            <h5>welcome to my html and css project it is simple one </h5>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md fixed-top">
+        <a class="navbar-brand" href="O:\Omar_Aloran_project\index.html">Omar Aloran</a>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid text-center ">
+        <div class="container">
+            <h1 class="display-3">Bootstrap</h1>
+            <p class="display-2">Welcome to My Website!</p>
         </div>
         <div class="button">
-            <a href="../project5.zip" download="../project5.zip">Click Me</a>
+            <a class="project" href="#project">to project </a>
+
+            <a class="download" href="../project5.zip" download="../project3.zip">Download </a>
         </div>
     </div>
-    
-    <div class="img-container">
-    
-        <img src="../project5/imgs/html.png" alt="html_logo" class="img1">
-        <img src="../project5/imgs/css.png" alt="css_logo" class="img2">
-        <img src="../project5/imgs/bootstrapImg.png" alt="bootstrap" class="img3">
-    
+
+
+    <div class="container">
+        <div class="row ">
+            <div class="img-wrapper">
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="../project3/imgs/img-Bootstrap@2x.png" alt="Bootstrap" class="img-fluid">
+                    <img src="./imgs/img-CSS.png" alt="css" class="img-fluid">
+                    <img src="./imgs/img-HTML.png" alt="css" class="img-fluid">
+                </div>
+            </div>
+        </div>
     </div>
 
 
-
-
-
-
-
-        <footer class="footer bg-dark text-white py-3">
+    <div class="flex-container   " id="project">
+        <div class="content">
+            <h1 class="display-3 text-center mb-20">HERE & Now</h1>
+            <p class="display-5 text-center mb-20">what are you waiting for Join Us Now!</p>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <a href="#" class="text-white">Omar Aloran</a>
-                    </div>
-        
+                <div class="row center-content">
+                    <form class="col-md-8 col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="inputName">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" >
+                            </div>
+                            <div class="col-12 align-items-end">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
-            </script>
-    </body>
+        </div>
+    </div>
+
+    <footer class="footer  text-white py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#" class="text-white">Omar Aloran</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+</body>
+
 </html>

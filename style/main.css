@@ -22,9 +22,9 @@ img {
     cursor: pointer;
 }
 
-.navbar-brand {
+/* .navbar-brand {
     margin-left: 1em;
-}
+} */
 
 .nav-link {
     transition: transform 0.3s;
@@ -37,9 +37,9 @@ img {
 
 }
 
-.navbar-collapse {
+/* .navbar-collapse {
     justify-content: flex-end;
-}
+} */
 
 .jumbotron {
     background-image: url('background.jpg') ;
@@ -62,11 +62,21 @@ img {
     margin-bottom: 20px;
 }
 
-.img-container {
-    border-bottom: 1px solid #ccc;
+.img-flex-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
 
+.img-flex-container img {
+    width: 5rem;
+    transition: transform 0.3s ease;
+}
+
+.img-flex-container img:hover {
+    transform: scale(1.2);
 }
 
 .img-wrapper {

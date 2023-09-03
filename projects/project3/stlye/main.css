@@ -5,14 +5,19 @@
 }
 
 .navbar {
+    height:  80px;
 
-    background: #3649f0;
+    background: #99a2f1;
+}
+.navbar.navbar-expand-md.fixed-top .navbar-brand {
+position: absolute;
+left: 15%;
 }
 .button a {
     border-radius: 30%;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0e21f1;
+    background-color: #99a2f1;
     color: white;
     text-decoration: none;
     font-size: 16px;
@@ -23,7 +28,7 @@ img {
     border-radius: 50%;
 }
 .jumbotron {
-    background-image: url('../imgs/wallpaper.jpg');
+    background-image: url('../imgs/background.jpg');
     height: 420px;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -32,7 +37,7 @@ img {
 
 .jumbotron h1 {
     font-size: 50px;
-color: #ccc;
+
     font-weight: bold;
 
     margin-bottom: 30px;
@@ -42,89 +47,99 @@ color: #ccc;
     font-size: 30px;
     margin-bottom: 20px;
 }
-.img-container {
-    border-bottom: 1px solid #ccc;
-    align-items: center;
-    padding-bottom: 10px;
-
-}
 
 .navbar-brand {
     margin-right: 1em;
 }
+.login-form {
+    background: #f1f7fc;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-.login-dark {
-    height: 1000px;
-    background: #475d62 url(../../assets/img/star-sky.jpg);
+.login-form .image-holder {
+    width: 400px;
+    height: 300px;
+    /* Adjust the height as needed */
+    background: url(..//imgs/coffe.jpg);
     background-size: cover;
-    position: relative;
+    margin-right: 20px;
+    flex: 0 0 auto;
 }
 
-.login-dark form {
-    max-width: 320px;
+.login-form .form-container {
+    max-width: 400px;
     width: 90%;
-    background-color: #1e2833;
-    padding: 40px;
-    border-radius: 4px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: #fff;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #505e6c;
+    flex: 1 1 auto;
 }
 
-.login-dark .illustration {
+.login-form form h2 {
+    font-size: 24px;
     text-align: center;
-    padding: 15px 0 20px;
-    font-size: 100px;
-    color: #2980ef;
+    margin-bottom: 20px;
 }
 
-.login-dark form .form-control {
-    background: none;
-    border: none;
-    border-bottom: 1px solid #434a52;
-    border-radius: 0;
-    box-shadow: none;
-    outline: none;
-    color: inherit;
+.login-form .form-control {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #dfe7f1;
+    border-radius: 4px;
+    background-color: #f7f9fc;
 }
 
-.login-dark form .btn-primary {
-    background: #214a80;
+
+
+/* Responsive styles for small screens */
+@media (max-width: 400px) {
+    .login-form {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .login-form .image-holder {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .login-form .form-container {
+        max-width: 100%;
+    }
+}
+
+
+.login-form .btn-primary {
+    background: #f4476b;
     border: none;
     border-radius: 4px;
     padding: 11px;
     box-shadow: none;
-    margin-top: 26px;
+    margin-top: 35px;
     text-shadow: none;
-    outline: none;
+    outline: none !important;
 }
 
-.login-dark form .btn-primary:hover,
-.login-dark form .btn-primary:active {
-    background: #214a80;
-    outline: none;
+.login-form .btn-primary:hover,
+.login-form .btn-primary:active {
+    background: #eb3b60;
 }
 
-.login-dark form .forgot {
-    display: block;
-    text-align: center;
-    font-size: 12px;
-    color: #6f7a85;
-    opacity: 0.9;
-    text-decoration: none;
-}
-
-.login-dark form .forgot:hover,
-.login-dark form .forgot:active {
-    opacity: 1;
-    text-decoration: none;
-}
-
-.login-dark form .btn-primary:active {
+.login-form .btn-primary:active {
     transform: translateY(1px);
+}
+
+
+.footer{
+    background-color: #99a2f1;
 }
 .footer a{
         text-decoration: none;
