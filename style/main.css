@@ -42,7 +42,7 @@ img {
 } */
 
 .jumbotron {
-    background-image: url('background.jpg') ;
+    background-image: url('background.jpg');
     height: 420px;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -96,6 +96,107 @@ img {
     width: 100%;
     height: 100%;
 }
+
+.grid-container h2 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    grid-column: 1 / 4;
+    margin-bottom: 10px;
+}
+
+.grid-container {
+    display: grid;
+    height: 800px;
+    align-content: space-evenly;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
+    background-color: #2196F3;
+    padding: 30px;
+}
+
+.grid-container>div {
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+/* .grid-container .first{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px 0;
+    font-size: 30px;
+} */
+
+.grid-container .XO {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px 0;
+    font-size: 30px;
+    background-image: url(../imgs/Games_icon/XO.png);
+}
+
+.grid-container .snake {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px 0;
+    font-size: 30px;
+    background-image: url(../imgs/Games_icon/snake.png);
+}
+
+.grid-container .XO {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px 0;
+    font-size: 30px;
+    background-image: url(../imgs/Games_icon/XO.png);
+}
+
+.grid-container .pingpong {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px 0;
+    font-size: 30px;
+    background-image: url(../imgs/Games_icon/pingpong.png);
+}
+
+.grid-container .list {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px 0;
+    font-size: 30px;
+    background-image: url(../imgs/Games_icon/icon.png) ;
+}
+
+.grid-container .XO {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px 0;
+    font-size: 30px;
+    background-image: url(../imgs/Games_icon/XO.png);
+}
+
+
+
 
 
 #footer {
