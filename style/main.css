@@ -155,14 +155,14 @@ img {
     background-image: url(../imgs/Games_icon/snake.png);
 }
 
-.grid-container .XO {
+.grid-container .Minesweeper {
     text-align: center;
     width: 200px;
     height: 200px;
     border-radius: 20px;
     padding: 20px 0;
     font-size: 30px;
-    background-image: url(../imgs/Games_icon/XO.png);
+    background-image: url(../imgs/Games_icon/mines2.png);
 }
 
 .grid-container .pingpong {
