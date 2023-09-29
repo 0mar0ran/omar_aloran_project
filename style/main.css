@@ -2,7 +2,6 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    padding-top: 85px;
 }
 
 .navbar {
@@ -22,18 +21,22 @@ img {
     cursor: pointer;
 }
 
-/* .navbar-brand {
-    margin-left: 1em;
-} */
+.navbar-brand {
+    margin-right: 1em;
+}
 
 .nav-link {
     transition: transform 0.3s;
     margin-right: 4em !important;
 }
 
+.navbar-nav {
+    order: 1;
+}
+
 .nav-link:hover {
     color: #000;
-    transform: scale(1.2);
+    transform: scale(1);
 
 }
 
@@ -111,13 +114,12 @@ img {
     align-content: space-evenly;
     justify-content: center;
     grid-template-columns: auto auto auto;
-    gap: 100px;
+    gap: 6em;
     background-color: #2196F3;
-    padding: 30px;
+    padding: 60px;
 }
 
 .grid-container>div {
-    position: relative;
     bottom: 50px;
     text-align: center;
     width: 200px;
@@ -125,15 +127,6 @@ img {
     border-radius: 20px;
     font-size: 30px;
 }
-
-/* .grid-container .first{
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
-    padding: 20px 0;
-    font-size: 30px;
-} */
 
 .grid-container .XO {
     text-align: center;
@@ -182,7 +175,7 @@ img {
     border-radius: 20px;
     padding: 20px 0;
     font-size: 30px;
-    background-image: url(../imgs/Games_icon/icon.png) ;
+    background-image: url(../imgs/Games_icon/icon.png);
 }
 
 .grid-container .XO {
