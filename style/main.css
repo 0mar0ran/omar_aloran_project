@@ -111,12 +111,13 @@ img {
 .grid-container {
     display: grid;
     height: 800px;
-    align-content: space-evenly;
     justify-content: center;
-    grid-template-columns: auto auto auto;
-    gap: 6em;
+    gap: 6rem;
     background-color: #2196F3;
     padding: 60px;
+    grid-template-areas:
+        "tic snake mine"
+        "ping to xo";
 }
 
 .grid-container>div {
@@ -136,6 +137,18 @@ img {
     padding: 20px 0;
     font-size: 30px;
     background-image: url(../imgs/Games_icon/XO.png);
+    grid-area: tic;
+}
+
+.grid-container .sudoku {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px 0;
+    font-size: 30px;
+    background-image: url(../imgs/Games_icon/sudoku.png);
+    grid-area: xo;
 }
 
 .grid-container .snake {
@@ -146,6 +159,7 @@ img {
     padding: 20px 0;
     font-size: 30px;
     background-image: url(../imgs/Games_icon/snake.png);
+    grid-area: snake;
 }
 
 .grid-container .Minesweeper {
@@ -156,6 +170,7 @@ img {
     padding: 20px 0;
     font-size: 30px;
     background-image: url(../imgs/Games_icon/mines2.png);
+    grid-area: mine;
 }
 
 .grid-container .pingpong {
@@ -166,6 +181,7 @@ img {
     padding: 20px 0;
     font-size: 30px;
     background-image: url(../imgs/Games_icon/pingpong.png);
+    grid-area: ping;
 }
 
 .grid-container .list {
@@ -176,17 +192,9 @@ img {
     padding: 20px 0;
     font-size: 30px;
     background-image: url(../imgs/Games_icon/icon.png);
+    grid-area: to;
 }
 
-.grid-container .XO {
-    text-align: center;
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
-    padding: 20px 0;
-    font-size: 30px;
-    background-image: url(../imgs/Games_icon/XO.png);
-}
 
 
 
@@ -222,4 +230,28 @@ img {
 .fourth-box {
     padding: 10px;
     background: #6cc;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid-item span {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .grid-container>div {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
